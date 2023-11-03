@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="kk_oB9YWBIQJXAP8_h68BzBQgJOd0tL-dK5yfSnu5eU" />
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <link rel="icon" href="./static/images/favicon.svg"> 
 </head>
 
 <body>
@@ -38,7 +38,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/IMG_1615_3.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/IMG_1615_3.jpg" class="hoverZoomLink"></a>
+              <a href="static/images/me.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="static/images/me.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -53,50 +53,6 @@
             </td>
           </tr>
         </tbody></table>
-
-        <!--preprints-->
-        <table style="width:100%;border:0px;border-spacing:0px;
-        border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:20px">
-            <tbody>
-            <tr>
-                <td style="padding:10px;width:100%;vertical-align:middle">
-                    <heading>(Pr)ePrints</heading>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;
-        margin-right:auto;margin-left:auto;">
-            <tbody>
-
-            <tr>
-                <td style="padding:20px;width:35%;vertical-align:middle">
-                    <img src='images/aditya-fchd.png' width="250" height="100"></div>
-                </td>
-                <td width="75%" valign="middle">
-                    <p>
-                        <a href="https://arxiv.org/abs/1809.08766">
-                            <papertitle>FCHD: Fast and accurate head detection in crowded scenes</papertitle>
-                        </a>
-                        <br>
-                        <strong>Aditya Vora</strong>,
-                        Vinay Chilaka
-                        <br>
-                        <a href="https://arxiv.org/abs/1809.08766">arxiv</a> /
-                        <a href="data/aditya-fchd.bib">bibtex</a> /
-                        <a href="https://github.com/aditya-vora/FCHD-Fully-Convolutional-Head-Detector">code</a>
-                    </p>
-                    <p></p>
-                    <p>
-                        A fully convolutional single stage head detector is proposed where the anchor scales are designed by taking effective receptive field into account, hence giving better average precision especially for small heads in crowded scenes.
-                    </p>
-                </td>
-            </tr>
-
-            </tbody>
-        </table>
-
 
         <!-- Publication -->
         <table style="width:100%;border:0px;border-spacing:0px;
@@ -116,22 +72,90 @@
 
             <tr>
                 <td style="padding:20px;width:35%;vertical-align:middle">
-                    <img src='images/aditya-isc.png' width="250" height="100"></div>
+                    <img src='static/images/divinet.png' width="200" height="100"></div>
                 </td>
                 <td width="75%" valign="middle">
                     <p>
-                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167865518300473">
+                        <!-- <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167865518300473"> -->
+                            <papertitle>DiViNeT: 3D Reconstruction from Disparate Views using Neural Template Regularization</papertitle>
+                        <!-- </a> -->
+                        <br>
+                        <strong>Aditya Vora</strong>,
+                        <a href="https://agp-ka32.github.io/">Akshay Gadi Patil</a>,
+                        <a href="https://www.cs.sfu.ca/~haoz/">Hao (Richard) Zhang</a>
+                        <br>
+                        <em>Neural Information Processing Systems (NeurIPS), </em> 2023
+                        <br>
+                        <a href="https://arxiv.org/abs/2306.04699">ArXiv</a> /
+                        <a href="https://aditya-vora.github.io/divinetpp">Project Page</a> / 
+                        <a href="">code</a> /
+                        <a href="data/divinet.bib">bibtex</a>
+                    </p>
+                    <p></p>
+                    <p>
+                        We present a volume rendering-based neural surface reconstruction method that takes as few as three disparate RGB images as input. Our key idea is to regularize the reconstruction, which is severely ill-posed and leaving significant gaps between the sparse views, by learning a set of neural templates to act as surface priors.
+                    </p>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;
+        margin-right:auto;margin-left:auto;">
+            <tbody>
+
+            <tr>
+                <td style="padding:20px;width:35%;vertical-align:middle">
+                    <img src='static/images/human_pose_transfer.png' width="200" height="100"></div>
+                </td>
+                <td width="75%" valign="middle">
+                    <p>
+                        <!-- <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167865518300473"> -->
+                            <papertitle>Deep Appearance Consistent Human Pose Transfer</papertitle>
+                        <!-- </a> -->
+                        <br>
+                        <a href="https://sites.google.com/iitgn.ac.in/ashishtiwari">Ashish Tiwari</a>,
+                        <a href="https://zeeshank95.github.io/">Zeeshan Khan</a>,
+                        <strong>Aditya Vora</strong>,
+                        <a href="https://www.linkedin.com/in/manjuprakash-rama-rao-7a16248/">Manjuprakash Rama Rao</a>,
+                        <a href="https://people.iitgn.ac.in/~shanmuga/">Shanmuganathan Raman</a>
+                        <br>
+                        <em>International Conference of Pattern Recognition (ICPR),</em> 2022
+                        <br>
+                        <a href="https://ieeexplore.ieee.org/document/9956219">Paper</a> /
+                        <a href="data/posetransfer.bib">bibtex</a>
+                    </p>
+                    <p></p>
+                    <p>
+                        We present a robut deep architecture for Appearance Consistent person image generation in novel poses. We incorporate a 3 stream network, for image, pose, and appearance. Additionaly we use Gated convolutions and, Non-local attention blocks for generating realistic images.                    </p>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;
+        margin-right:auto;margin-left:auto;">
+            <tbody>
+
+            <tr>
+                <td style="padding:20px;width:35%;vertical-align:middle">
+                    <img src='static/images/isc.png' width="225" height="100"></div>
+                </td>
+                <td width="75%" valign="middle">
+                    <p>
+                        <!-- <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167865518300473"> -->
                             <papertitle>Iterative spectral clustering for unsupervised object localization</papertitle>
-                        </a>
+                        <!-- </a> -->
                         <br>
                         <strong>Aditya Vora</strong>,
                         <a href="https://people.iitgn.ac.in/~shanmuga/">Shanmuganathan Raman</a>
                         <br>
-                        <em>Pattern Recognition Letters <a href="https://www.sciencedirect.com/journal/pattern-recognition-letters">
-                            (PRL)</a>,</em> 2018
+                        <em>Pattern Recognition Letters (PRL),</em> 2018
                         <br>
                         <a href="https://arxiv.org/abs/1706.09719">arxiv</a> /
-                        <a href="data/aditya-flow-free-vos.bib">bibtex</a>
+                        <a href="data/isc.bib">bibtex</a>
                     </p>
                     <p></p>
                     <p>
@@ -149,22 +173,21 @@
 
             <tr>
                 <td style="padding:20px;width:35%;vertical-align:middle">
-                    <img src='images/flow-free-vos.png' width="250" height="120"></div>
+                    <img src='static/images/flow-free-vos.png' width="225" height="120"></div>
                 </td>
                 <td width="75%" valign="middle">
                     <p>
-                        <a href="https://link.springer.com/chapter/10.1007/978-981-13-0020-2_4">
+                        <!-- <a href="https://link.springer.com/chapter/10.1007/978-981-13-0020-2_4"> -->
                             <papertitle>Flow-Free Video Object Segmentation</papertitle>
-                        </a>
+                        <!-- </a> -->
                         <br>
                         <strong>Aditya Vora</strong>,
                         <a href="https://people.iitgn.ac.in/~shanmuga/">Shanmuganathan Raman</a>
                         <br>
-                        <em>National Conference on Computer Vision, Pattern Recognition, Image Processing and Graphics <a href="https://ncvpripg.iitmandi.ac.in/">
-                            (NCVPRIPG)</a>,</em> 2017
+                        <em>National Conference on Computer Vision, Pattern Recognition, Image Processing and Graphics (NCVPRIPG),</em> 2017
                         <br>
                         <a href="https://arxiv.org/abs/1706.09544">arxiv</a> /
-                        <a href="data/aditya-isc.bib">bibtex</a>
+                        <a href="data/ffvos.bib">bibtex</a>
                     </p>
                     <p></p>
                     <p>
@@ -175,17 +198,63 @@
 
             </tbody>
         </table>
+
+        <!--preprints-->
+        <table style="width:100%;border:0px;border-spacing:0px;
+        border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:20px">
+            <tbody>
+            <tr>
+                <td style="padding:10px;width:100%;vertical-align:middle">
+                    <heading>(Pr)ePrints</heading>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;
+        margin-right:auto;margin-left:auto;">
+            <tbody>
+
+            <tr>
+                <td style="padding:20px;width:35%;vertical-align:middle">
+                    <img src='static/images/fchd.png' width="200" height="80"></div>
+                </td>
+                <td width="75%" valign="middle">
+                    <p>
+                        <a href="https://arxiv.org/abs/1809.08766">
+                            <papertitle>FCHD: Fast and accurate head detection in crowded scenes</papertitle>
+                        </a>
+                        <br>
+                        <strong>Aditya Vora</strong>,
+                        Vinay Chilaka
+                        <br>
+                        <a href="https://arxiv.org/abs/1809.08766">arxiv</a> /
+                        <a href="data/fchd.bib">bibtex</a> /
+                        <a href="https://github.com/aditya-vora/FCHD-Fully-Convolutional-Head-Detector">code</a>
+                    </p>
+                    <p></p>
+                    <p>
+                        A fully convolutional single stage head detector is proposed where the anchor scales are designed by taking effective receptive field into account, hence giving better average precision especially for small heads in crowded scenes.
+                    </p>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
         <table style="width:100%;border:0px;border-spacing:0px;
         border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:20px">
             <tbody>
             <tr>
                 <td style="padding:10px;width:100%;vertical-align:middle">
                     <heading>Patents</heading>
-                    <p>Rajkumar Palanivel, Amit Kulkarni, Douglas Beaudet, Manjuprakash Rama Rao, Atul Laxman Katole, <strong> Aditya Narendrakumar Vora</strong>, "System and Method for identifying blockages of emergency exits in a building.", 2019 (Filed: H215009-US)</p>
+                    <p>Rajkumar Palanivel, Amit Kulkarni, Douglas Beaudet, Manjuprakash Rama Rao, Atul Laxman Katole, <strong> Aditya Vora</strong>, "System and Method for identifying blockages of emergency exits in a building.", US Patent 11388775, 2021</p>
                 </td>
             </tr>
             </tbody>
         </table>
+
+
 
 
                 <!-- Bottom -->
